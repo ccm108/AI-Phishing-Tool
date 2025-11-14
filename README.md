@@ -1,29 +1,30 @@
-AI Phishing Detector
-An AI-powered web application that analyzes emails and detects potential phishing attempts using a trained machine learning model. Users can paste any email into the frontend chat interface, and the system returns a risk score, detection explanation, and phishing indicators identified by the model.
-🚀 Features
-AI-based phishing classification using a machine learning model trained on a Kaggle dataset
-User-friendly frontend built with React (TypeScript, JavaScript, HTML, CSS)
-Python backend API that processes emails and generates risk scores
-Real-time evaluation of suspicious links, wording, formatting, and metadata
-Clear explanations of why the email may be phishing
-🧠 How It Works
-User enters or pastes an email into the React frontend.
-The frontend sends the text to the Python backend API.
-The backend loads the machine learning model from trained_model.py.
-main.py handles the request, runs the analysis, and returns:
-A phishing risk score
-A classification (phishing or legitimate)
-Key findings explaining what triggered the model
-Results are displayed in the chatbot-style frontend interface.
-📚 Tech Stack
-Backend
-Python
-FastAPI (or standard Python API if not using FastAPI)
-Machine Learning (trained model in trained_model.py)
-Frontend
-React
-TypeScript / JavaScript
-HTML / CSS
-AI / ML
-Kaggle Phishing Emails Dataset
-Feature extraction + model training handled in Python
+# AI Phishing Detector
+An AI-powered web app that analyzes emails and detects phishing attempts. Paste an email into the chat interface, and the AI provides a **risk score**, **classification**, and **findings**.
+
+![AI Phishing Detector Screenshot](http://placecorgi.com/1200/650)  
+*(Replace this placeholder with an actual screenshot of your frontend)*
+
+## How It's Made
+
+**Tech used:** Python, React (TypeScript, JavaScript, HTML, CSS), Machine Learning
+
+This project has a **React frontend** where users paste emails into a chatbot interface. The frontend sends the email to a **Python backend** running a machine learning model (`trained_model.py`) that analyzes the text. `main.py` handles requests, processes the email, and returns:  
+- A phishing **risk score**  
+- **Classification** (phishing or legitimate)  
+- Key findings highlighting suspicious patterns
+
+The backend and frontend are fully integrated, providing **real-time results** in a clean, easy-to-read UI.
+
+## Optimizations
+
+- Backend model is pre-loaded to reduce response time  
+- Frontend updates asynchronously without page reloads  
+- Clean component structure in React for maintainability  
+- Transparent icons and responsive design for all screen sizes
+
+## Lessons Learned
+
+- Learned how to integrate a machine learning model with a full-stack web app  
+- Gained experience handling real-time data between frontend and backend  
+- Improved skills in Python API design and React UI development  
+- Learned the importance of clean documentation and user-friendly design
