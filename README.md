@@ -1,9 +1,6 @@
 # AI Phishing Detector 🛡️🤖
 An AI-powered web app that analyzes emails and detects phishing attempts. Paste an email into the chat interface, and the AI provides a **risk score**, **classification**, and **findings**.
 
-![AI Phishing Detector Screenshot](http://placecorgi.com/1200/650)  
-*(Replace this placeholder with an actual screenshot of your frontend)*
-
 ## How It's Made 🛠️
 
 **Tech used:** Python 🐍, React ⚛️ (TypeScript, JavaScript, HTML, CSS), Machine Learning 🧠
