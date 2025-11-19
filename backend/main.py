@@ -15,8 +15,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
-
 model = joblib.load("trained_model.pkl")
 vectorizer = joblib.load ("vectorizer.pkl")
 
@@ -112,3 +110,9 @@ async def detect_phishing(email: Email):
 @app.get("/")
 async def root():
     return {"message": "Phishing Detector API is running"}
+
+if __name__ == "__main__":
+    import uvicorn, os
+    port = int(os.environ.get("PORT", 8000)) 
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
