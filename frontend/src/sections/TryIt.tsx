@@ -25,7 +25,7 @@ const TryIt = () => {
     
     // Simulate scanning delay
     try {
-        const response = await fetch("https://ai-phishing-tool.onrender.com", {
+        const response = await fetch("https://ai-phishing-tool.onrender.com/detect", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
